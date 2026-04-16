@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Doctors</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<button onclick="go('dashboard.html')">⬅ Back</button>
+
+<h2 id="docTitle">Doctors</h2>
+
+<div class="card">
+
+<label id="nameLabel">Name</label>
+<input id="docName">
+
+<label id="specLabel">Specialization</label>
+<input id="docSpec">
+
+<button onclick="addDoctor()" id="addDocBtn">Add</button>
+
+</div>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th id="t1">Name</th>
+        <th id="t2">Specialization</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="docTable"></tbody>
+  </table>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

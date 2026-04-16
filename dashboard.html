@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="nav">
+  <button onclick="go('doctors.html')" id="docBtn">Doctors</button>
+  <button onclick="go('appointments.html')" id="appBtn">Appointments</button>
+
+  <button onclick="toggleTheme()">🌙</button>
+  <button onclick="toggleLang()">🌍</button>
+</div>
+
+<div class="card">
+  <h2 id="welcome">Dashboard</h2>
+
+  <p id="docCountText">Doctors: <span id="docCount">0</span></p>
+  <p id="appCountText">Appointments: <span id="appCount">0</span></p>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
